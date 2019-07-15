@@ -44,7 +44,7 @@ class OrderTest {
         list.add(lineItem);
         Order order=new Order("Kloe","Beijing",list);
         //when
-        List res=order.getLineItems();
+        List res=order.getCustemorLineItems();
         //then
         assertSame(list,res);
     }

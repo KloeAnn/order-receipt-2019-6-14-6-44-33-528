@@ -21,7 +21,7 @@ public class Order {
         return customerAddress;
     }
 
-    public List<LineItem> getLineItems() {
+    public List<LineItem> getCustemorLineItems() {
         return lineItemList;
     }
 }

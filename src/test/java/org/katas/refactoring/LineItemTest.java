@@ -35,5 +35,14 @@ class LineItemTest {
         //then
         assertEquals(1,quantity);
     }
+    @Test
+    public void should_return_total_when_get_total_amount(){
+        //given
+        LineItem lineItem=new LineItem("Some description",1.22,1);
+        //when
+        double totalAmount=lineItem.totalAmount();
+        //then
+        assertEquals(1.22,totalAmount);
+    }
 
 }

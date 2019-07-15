@@ -40,7 +40,7 @@ class LineItemTest {
         //given
         LineItem lineItem=new LineItem("Some description",1.22,1);
         //when
-        double totalAmount=lineItem.totalAmount();
+        double totalAmount=lineItem.caculateTotalAmount();
         //then
         assertEquals(1.22,totalAmount);
     }
